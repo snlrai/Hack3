@@ -30,7 +30,7 @@ onMounted(() => {
     productService.getProducts().then((data) => (products.value = data));
 });
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    return value.toLocaleString('en-US', { style: 'currency', currency: 'INR' });
 };
 
 const openNew = () => {

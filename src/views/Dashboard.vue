@@ -39,7 +39,7 @@ onMounted(() => {
 });
 
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    return value.toLocaleString('en-US', { style: 'currency', currency: 'INR' });
 };
 const applyLightTheme = () => {
     lineOptions.value = {
@@ -137,7 +137,6 @@ watch(
                     <div>
                         <span class="block text-500 font-medium mb-3">Revenue</span>
                         <div class="text-900 font-medium text-xl">₹2.100</div>
-                        <div class="text-900 font-medium text-xl">₹2.100</div>
                     </div>
                     <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width: 2.5rem; height: 2.5rem">
                         <i class="pi pi-map-marker text-orange-500 text-xl"></i>
@@ -205,16 +204,16 @@ watch(
             <div class="card">
                 <div class="flex justify-content-between align-items-center mb-5">
                     <h5>Best Selling Products</h5>
-                    <div>
-                        <Button icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" @click="$refs.menu2.toggle($event)"></Button>
+                    <!-- <div>
+                         <Button icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" @click="$refs.menu2.toggle($event)"></Button> 
                         <Menu ref="menu2" :popup="true" :model="items"></Menu>
-                    </div>
+                    </div> -->
                 </div>
                 <ul class="list-none p-0 m-0">
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Space T-Shirt</span>
-                            <div class="mt-1 text-600">Clothing</div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Rambutan</span>
+                            <div class="mt-1 text-600">Exotic Fruit</div>
                         </div>
                         <div class="mt-2 md:mt-0 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
@@ -225,8 +224,8 @@ watch(
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Portal Sticker</span>
-                            <div class="mt-1 text-600">Accessories</div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Dragon Fruit</span>
+                            <div class="mt-1 text-600">Exotic Fruit</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
@@ -237,8 +236,8 @@ watch(
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Supernova Sticker</span>
-                            <div class="mt-1 text-600">Accessories</div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Apple</span>
+                            <div class="mt-1 text-600">Fruit</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
@@ -249,8 +248,8 @@ watch(
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Wonders Notebook</span>
-                            <div class="mt-1 text-600">Office</div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Arkha Saurabh</span>
+                            <div class="mt-1 text-600">Exotic Fruit</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
@@ -261,8 +260,8 @@ watch(
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Mat Black Case</span>
-                            <div class="mt-1 text-600">Accessories</div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Persimmon</span>
+                            <div class="mt-1 text-600">Exotic Fruit</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
@@ -273,8 +272,8 @@ watch(
                     </li>
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                         <div>
-                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Robots T-Shirt</span>
-                            <div class="mt-1 text-600">Clothing</div>
+                            <span class="text-900 font-medium mr-2 mb-1 md:mb-0">Mangosteen</span>
+                            <div class="mt-1 text-600">Exotic Fruit</div>
                         </div>
                         <div class="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
