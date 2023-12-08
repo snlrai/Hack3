@@ -32,13 +32,13 @@ const setChart = () => {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
             {
-                label: 'My First dataset',
+                label: '2022',
                 backgroundColor: documentStyle.getPropertyValue('--primary-500'),
                 borderColor: documentStyle.getPropertyValue('--primary-500'),
                 data: [65, 59, 80, 81, 56, 55, 40]
             },
             {
-                label: 'My Second dataset',
+                label: '2023',
                 backgroundColor: documentStyle.getPropertyValue('--primary-200'),
                 borderColor: documentStyle.getPropertyValue('--primary-200'),
                 data: [28, 48, 40, 19, 86, 27, 90]
@@ -104,7 +104,7 @@ const setChart = () => {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
             {
-                label: 'First Dataset',
+                label: '2022',
                 data: [65, 59, 80, 81, 56, 55, 40],
                 fill: false,
                 backgroundColor: documentStyle.getPropertyValue('--primary-500'),
@@ -112,7 +112,7 @@ const setChart = () => {
                 tension: 0.4
             },
             {
-                label: 'Second Dataset',
+                label: '2023',
                 data: [28, 48, 40, 19, 86, 27, 90],
                 fill: false,
                 backgroundColor: documentStyle.getPropertyValue('--primary-200'),
@@ -184,7 +184,7 @@ const setChart = () => {
         labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
         datasets: [
             {
-                label: 'My First dataset',
+                label: '2022',
                 borderColor: documentStyle.getPropertyValue('--indigo-400'),
                 pointBackgroundColor: documentStyle.getPropertyValue('--indigo-400'),
                 pointBorderColor: documentStyle.getPropertyValue('--indigo-400'),
@@ -193,7 +193,7 @@ const setChart = () => {
                 data: [65, 59, 90, 81, 56, 55, 40]
             },
             {
-                label: 'My Second dataset',
+                label: '2023',
                 borderColor: documentStyle.getPropertyValue('--purple-400'),
                 pointBackgroundColor: documentStyle.getPropertyValue('--purple-400'),
                 pointBorderColor: documentStyle.getPropertyValue('--purple-400'),
@@ -234,12 +234,12 @@ watch(
 
 <template>
     <div class="grid p-fluid">
-        <div class="col-12 xl:col-6">
+        <!-- <div class="col-12 xl:col-6">
             <div class="card">
                 <h5>Linear Chart</h5>
                 <Chart type="line" :data="lineData" :options="lineOptions"></Chart>
             </div>
-        </div>
+        </div> -->
         <div class="col-12 xl:col-6">
             <div class="card">
                 <h5>Bar Chart</h5>
@@ -252,7 +252,7 @@ watch(
                 <Chart type="pie" :data="pieData" :options="pieOptions"></Chart>
             </div>
         </div>
-        <div class="col-12 xl:col-6">
+        <!-- <div class="col-12 xl:col-6">
             <div class="card flex flex-column align-items-center">
                 <h5 class="text-left w-full">Doughnut Chart</h5>
                 <Chart type="doughnut" :data="pieData" :options="pieOptions"></Chart>
@@ -269,6 +269,6 @@ watch(
                 <h5 class="text-left w-full">Radar Chart</h5>
                 <Chart type="radar" :data="radarData" :options="radarOptions"></Chart>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
