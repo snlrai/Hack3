@@ -249,20 +249,20 @@ const initFilters = () => {
                         <label class="mb-3">Category</label>
                         <div class="formgrid grid">
                             <div class="field-radiobutton col-6">
-                                <RadioButton id="category1" name="category" value="Accessories" v-model="product.category" />
-                                <label for="category1">Accessories</label>
+                                <RadioButton id="category1" name="category" value="Exotic fruit" v-model="product.category" />
+                                <label for="category1">Exotic Fruit</label>
                             </div>
                             <div class="field-radiobutton col-6">
-                                <RadioButton id="category2" name="category" value="Clothing" v-model="product.category" />
-                                <label for="category2">Clothing</label>
+                                <RadioButton id="category2" name="category" value="Vegetable" v-model="product.category" />
+                                <label for="category2">Vegetables</label>
                             </div>
                             <div class="field-radiobutton col-6">
-                                <RadioButton id="category3" name="category" value="Electronics" v-model="product.category" />
-                                <label for="category3">Electronics</label>
+                                <RadioButton id="category3" name="category" value="Fruit" v-model="product.category" />
+                                <label for="category3">Fruit</label>
                             </div>
                             <div class="field-radiobutton col-6">
-                                <RadioButton id="category4" name="category" value="Fitness" v-model="product.category" />
-                                <label for="category4">Fitness</label>
+                                <RadioButton id="category4" name="category" value="Diary" v-model="product.category" />
+                                <label for="category4">Diary</label>
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,7 @@ const initFilters = () => {
                     <div class="formgrid grid">
                         <div class="field col">
                             <label for="price">Price</label>
-                            <InputNumber id="price" v-model="product.price" mode="currency" currency="USD" locale="en-US" :class="{ 'p-invalid': submitted && !product.price }" :required="true" />
+                            <InputNumber id="price" v-model="product.price" mode="currency" currency="INR" locale="en-US" :class="{ 'p-invalid': submitted && !product.price }" :required="true" />
                             <small class="p-invalid" v-if="submitted && !product.price">Price is required.</small>
                         </div>
                         <div class="field col">
