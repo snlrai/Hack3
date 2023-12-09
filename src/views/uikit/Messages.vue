@@ -38,7 +38,7 @@ const showError = () => {
 </script>
 
 <template>
-    <div class="grid">
+    <!-- <div class="grid">
         <div class="col-12 lg:col-6">
             <div class="card">
                 <h5>Toast</h5>
@@ -96,5 +96,5 @@ const showError = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>

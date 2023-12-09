@@ -34,7 +34,7 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
 
 <template>
     <div class="grid">
-        <div class="col-6">
+        <!-- <div class="col-6">
             <div class="card">
                 <h5>Left Align</h5>
                 <Timeline :value="customEvents">
@@ -43,8 +43,8 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
                     </template>
                 </Timeline>
             </div>
-        </div>
-        <div class="col-6">
+        </div> -->
+        <!-- <div class="col-6">
             <div class="card">
                 <h5>Right Align</h5>
                 <Timeline :value="customEvents" align="right">
@@ -53,8 +53,8 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
                     </template>
                 </Timeline>
             </div>
-        </div>
-        <div class="col-6">
+        </div> -->
+        <!-- <div class="col-6">
             <div class="card">
                 <h5>Alternate Align</h5>
                 <Timeline :value="customEvents" align="alternate">
@@ -63,8 +63,8 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
                     </template>
                 </Timeline>
             </div>
-        </div>
-        <div class="col-6">
+        </div> -->
+        <!-- <div class="col-6">
             <div class="card">
                 <h5>Opposite Content</h5>
                 <Timeline :value="customEvents">
@@ -76,10 +76,10 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
                     </template>
                 </Timeline>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="card">
-        <h5>Custom Timeline</h5>
+        <h5>Timeline</h5>
         <Timeline :value="customEvents" align="alternate" class="customized-timeline">
             <template #marker="slotProps">
                 <span class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-2" :style="{ backgroundColor: slotProps.item.color }">
@@ -96,17 +96,14 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
                     </template>
                     <template #content>
                         <img v-if="slotProps.item.image" :src="'demo/images/product/' + slotProps.item.image" :alt="slotProps.item.name" width="200" class="shadow-2 mb-3" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-                            neque quas!
-                        </p>
+                        
                         <Button label="Read more" class="p-button-text"></Button>
                     </template>
                 </Card>
             </template>
         </Timeline>
     </div>
-    <div class="card mt-3">
+    <!-- <div class="card mt-3">
         <h5>Horizontal</h5>
         <h6>Top Align</h6>
         <Timeline :value="horizontalEvents" layout="horizontal" align="top">
@@ -129,7 +126,7 @@ const horizontalEvents = ref(['2020', '2021', '2022', '2023']);
                 {{ slotProps.item }}
             </template>
         </Timeline>
-    </div>
+    </div> -->
 </template>
 
 <style lang="scss" scoped>

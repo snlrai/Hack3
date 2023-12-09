@@ -9,7 +9,7 @@ const model = ref([
         items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
     },
     {
-        label: 'UI Components',
+        label: 'Menu',
         items: [
             // { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
             // { label: 'Input', icon: 'pi pi-fw pi-check-square', to: '/uikit/input' },
@@ -18,7 +18,7 @@ const model = ref([
             { label: 'List', icon: 'pi pi-fw pi-list', to: '/uikit/list' },
             // { label: 'Panel', icon: 'pi pi-fw pi-tablet', to: '/uikit/panel' },
             // { label: 'Overlay', icon: 'pi pi-fw pi-clone', to: '/uikit/overlay' },
-            { label: 'Media', icon: 'pi pi-fw pi-image', to: '/uikit/media' },
+            // { label: 'Media', icon: 'pi pi-fw pi-image', to: '/uikit/media' },
             { label: 'Menu', icon: 'pi pi-fw pi-bars', to: '/uikit/menu', preventExact: true },
             { label: 'Messages', icon: 'pi pi-fw pi-comment', to: '/uikit/message' },
             // { label: 'File', icon: 'pi pi-fw pi-file', to: '/uikit/file' },
@@ -32,7 +32,7 @@ const model = ref([
         
     },
     {
-        label: 'Pages',
+        label: 'Account',
         icon: 'pi pi-fw pi-briefcase',
         to: '/pages',
         items: [
@@ -49,17 +49,17 @@ const model = ref([
                         label: 'Login',
                         icon: 'pi pi-fw pi-sign-in',
                         to: '/auth/login'
-                    },
-                    {
-                        label: 'Error',
-                        icon: 'pi pi-fw pi-times-circle',
-                        to: '/auth/error'
-                    },
-                    {
-                        label: 'Access Denied',
-                        icon: 'pi pi-fw pi-lock',
-                        to: '/auth/access'
-                    }
+                        }
+                    // {
+                    //     label: 'Error',
+                    //     icon: 'pi pi-fw pi-times-circle',
+                    //     to: '/auth/error'
+                    // },
+                    // {
+                    //     label: 'Access Denied',
+                    //     icon: 'pi pi-fw pi-lock',
+                    //     to: '/auth/access'
+                    // }
                 ]
             },
             {
@@ -74,51 +74,51 @@ const model = ref([
             },
             
         ]
-    },
-    {
-        label: 'Hierarchy',
-        items: [
-            {
-                label: 'Submenu 1',
-                icon: 'pi pi-fw pi-bookmark',
-                items: [
-                    {
-                        label: 'Submenu 1.1',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [
-                            { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-bookmark' }
-                        ]
-                    },
-                    {
-                        label: 'Submenu 1.2',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [{ label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-bookmark' }]
-                    }
-                ]
-            },
-            {
-                label: 'Submenu 2',
-                icon: 'pi pi-fw pi-bookmark',
-                items: [
-                    {
-                        label: 'Submenu 2.1',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [
-                            { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-bookmark' },
-                            { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-bookmark' }
-                        ]
-                    },
-                    {
-                        label: 'Submenu 2.2',
-                        icon: 'pi pi-fw pi-bookmark',
-                        items: [{ label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-bookmark' }]
-                    }
-                ]
-            }
-        ]
-    },
+    }
+    // {
+    //     label: 'Hierarchy',
+    //     items: [
+    //         {
+    //             label: 'Submenu 1',
+    //             icon: 'pi pi-fw pi-bookmark',
+    //             items: [
+    //                 {
+    //                     label: 'Submenu 1.1',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [
+    //                         { label: 'Submenu 1.1.1', icon: 'pi pi-fw pi-bookmark' },
+    //                         { label: 'Submenu 1.1.2', icon: 'pi pi-fw pi-bookmark' },
+    //                         { label: 'Submenu 1.1.3', icon: 'pi pi-fw pi-bookmark' }
+    //                     ]
+    //                 },
+    //                 {
+    //                     label: 'Submenu 1.2',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [{ label: 'Submenu 1.2.1', icon: 'pi pi-fw pi-bookmark' }]
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             label: 'Submenu 2',
+    //             icon: 'pi pi-fw pi-bookmark',
+    //             items: [
+    //                 {
+    //                     label: 'Submenu 2.1',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [
+    //                         { label: 'Submenu 2.1.1', icon: 'pi pi-fw pi-bookmark' },
+    //                         { label: 'Submenu 2.1.2', icon: 'pi pi-fw pi-bookmark' }
+    //                     ]
+    //                 },
+    //                 {
+    //                     label: 'Submenu 2.2',
+    //                     icon: 'pi pi-fw pi-bookmark',
+    //                     items: [{ label: 'Submenu 2.2.1', icon: 'pi pi-fw pi-bookmark' }]
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // },
    
 ]);
 </script>

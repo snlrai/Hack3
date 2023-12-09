@@ -441,8 +441,8 @@ const onContextRightClick = (event) => {
 
 <template>
     <div class="grid p-fluid">
-        <div class="col-12">
-            <div class="card card-w-title">
+        <!-- <div class="col-12">
+             <div class="card card-w-title">
                 <h5>Menubar</h5>
                 <Menubar :model="nestedMenuitems">
                     <template #end>
@@ -452,17 +452,17 @@ const onContextRightClick = (event) => {
                         </span>
                     </template>
                 </Menubar>
-            </div>
-        </div>
+            </div> 
+        </div> -->
 
-        <div class="col-12">
+        <!-- <div class="col-12">
             <div class="card card-w-title">
                 <h5>Breadcrumb</h5>
                 <Breadcrumb :home="breadcrumbHome" :model="breadcrumbItems" />
             </div>
-        </div>
+        </div> -->
 
-        <div class="col-12 md:col-6">
+        <!-- <div class="col-12 md:col-6">
             <div class="card card-w-title">
                 <h5>Steps</h5>
                 <p>Steps and TabMenu are integrated with the same child routes.</p>
@@ -478,7 +478,7 @@ const onContextRightClick = (event) => {
                 <TabMenu :model="nestedRouteItems" />
                 <router-view />
             </div>
-        </div>
+        </div> -->
 
         <div class="col-12 md:col-4">
             <div class="card">
@@ -487,7 +487,7 @@ const onContextRightClick = (event) => {
             </div>
         </div>
 
-        <div class="col-12 md:col-4">
+        <!-- <div class="col-12 md:col-4">
             <div class="card">
                 <h5>Plain Menu</h5>
                 <Menu :model="menuitems" />
@@ -524,6 +524,6 @@ const onContextRightClick = (event) => {
                 <h5>PanelMenu</h5>
                 <PanelMenu :model="panelMenuitems" />
             </div>
-        </div>
+        </div> -->
     </div>
 </template>

@@ -87,7 +87,7 @@ const onSortChange = (event) => {
                                     </div>
                                 </div>
                                 <div class="flex flex-row md:flex-column justify-content-between w-full md:w-auto align-items-center md:align-items-end mt-5 md:mt-0">
-                                    <span class="text-2xl font-semibold mb-2 align-self-center md:align-self-end">${{ slotProps.data.price }}</span>
+                                    <span class="text-2xl font-semibold mb-2 align-self-center md:align-self-end">₹{{ slotProps.data.price }}</span>
                                     <Button icon="pi pi-shopping-cart" label="Add to Cart" :disabled="slotProps.data.inventoryStatus === 'OUTOFSTOCK'" class="mb-2"></Button>
                                     <span :class="'product-badge status-' + slotProps.data.inventoryStatus.toLowerCase()">{{ slotProps.data.inventoryStatus }}</span>
                                 </div>
@@ -112,7 +112,7 @@ const onSortChange = (event) => {
                                     <Rating :modelValue="slotProps.data.rating" :readonly="true" :cancel="false"></Rating>
                                 </div>
                                 <div class="flex align-items-center justify-content-between">
-                                    <span class="text-2xl font-semibold">${{ slotProps.data.price }}</span>
+                                    <span class="text-2xl font-semibold"> ₹{{ slotProps.data.price }}</span>
                                     <Button icon="pi pi-shopping-cart" :disabled="slotProps.data.inventoryStatus === 'OUTOFSTOCK'"></Button>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ const onSortChange = (event) => {
             </div>
         </div>
 
-        <div class="col-12 lg:col-8">
+        <!-- <div class="col-12 lg:col-8">
             <div class="card">
                 <h5>PickList</h5>
                 <PickList v-model="picklistValue" listStyle="height:250px" dataKey="code">
@@ -133,9 +133,9 @@ const onSortChange = (event) => {
                     </template>
                 </PickList>
             </div>
-        </div>
+        </div> -->
 
-        <div class="col-12 lg:col-4">
+        <!-- <div class="col-12 lg:col-4">
             <div class="card">
                 <h5>OrderList</h5>
                 <OrderList v-model="orderlistValue" listStyle="height:250px" dataKey="code" :rows="10">
@@ -145,6 +145,6 @@ const onSortChange = (event) => {
                     </template>
                 </OrderList>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
